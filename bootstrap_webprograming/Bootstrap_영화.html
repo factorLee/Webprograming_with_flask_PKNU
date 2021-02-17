@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프로그래밍_중간고사대체과제_201730262_이상주</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<body style="background-color: ghostwhite;">
+    <!-- 메뉴바 -->
+    <nav id="navbar01" class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+        <div class="container">
+            <!-- 윌슨 이미지 버튼 -->
+            <a class="navbar-brand" href="#jumbotron">
+                <img src="wilson.png" width="40" height="40">
+            </a>
+            <!-- 햄버거 버튼 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tomhanksFile">Tom Hanks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#firstMovie">Forrest Gump</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#secondMovie">Catch me if you can</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thirdMovie">Terminal</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        기타
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#table">비교</a>
+                        <a class="dropdown-item" href="#review">리뷰영상</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- scrollspy -->
+    <div data-spy="scroll" data-target="#navbar01" data-offset="50">
+        <!-- Jumbotron -->
+        <div id="jumbotron" class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+            <div class="container" style="padding-top: 50px;">
+
+            <h1 class="display-4 font-weight-bold">Tom Hanks representative film's</h1>
+            <P></P>
+            <p class="lead">가장 좋아하는 영화, 가장 좋아하는 배우 톰행크스의 인생영화를 소개합니다.</p>
+            </div>
+        </div>
+        
+        <!-- 슬라이드 사진 -->
+        <div class="container" style="margin-bottom: 100px;">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="tomhanks_fg.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First movie</h5>
+                        <p>Forrest Gump, 1994</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="tomhanks_ciyc.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second movie</h5>
+                        <p>Catch me if you can, 2003</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="tomhanks_tm.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third movie</h5>
+                        <p>Terminal, 2004</p>
+                    </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <hr id="tomhanksFile" style="margin-top: 100px;">
+        </div>
+        
+        <!-- Tomhanks file -->
+        <div class="container" style="padding: 30px; border: 1px solid lightgray; margin-top: 10px; margin-bottom: 100px;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content-section">
+                        <h2 class="my-2 font-weight-bold">배우소개</h2>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="https://i.pinimg.com/originals/92/7f/64/927f64df23498ee30455b0b4b96ba6d4.jpg" class="img-fluid" width="200" height="" alt="">
+                                </div>
+                                <div class="col-sm-9">
+                                    
+                                    <h1>Tom Hanks <font color= "lightgray"; size = "3px">영화배우, 영화감독</font></h1>
+                                    <ul>
+                                        <p></p>
+                                        <li>출생: 1956년 7월 9일, 미국</li>
+                                        <li>신체: 183cm</li>
+                                        <li>학력: 캘리포니아주립대학교 영화</li>
+                                        <li>데뷔: 1980년 영화 '어둠의 방랑자'</li>
+                                        <li>수상: 2020년 제 77회 골든 글로브 시상식 세실 B. 데밀상 외 다수</li>
+                                        <!-- SNS -->
+                                        <p></p>
+                                        <p><font color= "lightgray";>Social Media</font></p>
+                                        <p></p>
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <a class="facebook" href="https://www.facebook.com/TomHanks"><img class="facebook" src="https://image.flaticon.com/icons/svg/145/145802.svg" alt="facebookLink" width="30px" height="auto"></a>
+                                            </div>
+                                            <div class="col-1">
+                                                <a class="twitter" href="https://twitter.com/tomhanks"><img class="twitter" src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="twitterLink"  width="30px" height="auto"></a>
+                                            </div>
+                                            <div class="col-1">
+                                                <a class="instagram" href="https://www.instagram.com/tomhanks/"><img class="instagram" src="https://image.flaticon.com/icons/svg/145/145805.svg" alt="instagramLink"  width="30px" height="auto"></a>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--첫번째영화-->
+        <div class="container" >
+            <hr id="firstMovie" style="margin-bottom: 100px;">
+            <div class="row-12">
+                <!-- 첫번째 영화 소개(Card) -->
+                <div class="card mb-3" style="max-width: auto;">
+                    <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://ih1.redbubble.net/image.1007031886.7968/flat,750x1000,075,f.jpg" class="card-img" alt="포레스트검프 포스터" >
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">포레스트 검프(Forrest Gump)</h3>
+                            <!-- 별점 -->
+                            <p>평점: <img src="starPoint01.png" alt="" class="img-fluid" width="80px" height="auto" style="margin-bottom: 5px;">&nbsp;&nbsp; 9.52</p>
+                            <ul>
+                                <li>개봉: 1994.10.15</li>
+                                <li>장르: 드라마,코미디</li>
+                                <li>감독: 로버트 저메키스</li>
+                            </ul>
+                            <p class="card-text">&nbsp;《포레스트 검프》(Forrest Gump)는 윈스턴 그룸의 1986년 동명 소설에 기반한 톰 행크스 주연의 1994년작 미국 영화이다. 
+                                지적장애를 가졌지만 열정있고 가슴 따뜻한 포레스트 검프가 미국의 격동적인 역사적 사건들을 헤쳐나가는 것을 그리고 있다. 감독은 80~90년대 오락 영화의 신으로 불리는 로버트 저메키스 감독이다. 
+                                상영기간 동안 전 세계에서 6억7700만 달러를 벌어 거대한 상업적인 성공을 거두었고 그 해에 최고의 총수입 영화로 만들었다. 
+                                1995년 제67회 아카데미상에서 총 13번의 지명을 얻었고, 그 중 아카데미 작품상, 아카데미 시각효과상, 아카데미 감독상, 아카데미 남우주연상을 수반하는 6개의 상을 수상했다.</p>
+                            <p class="card-text"><small class="text-muted">Reference: wikipedia, namuwiki</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 100px;">
+                <div class="col-sm-6">
+                    <!-- 나의 감상평 -->
+                    <div class="media" style="margin: 10px 0px">
+                        <img src="https://postfiles.pstatic.net/MjAyMDA0MDJfMTgz/MDAxNTg1ODMxOTg0MzIy.WNdYUGslJ9TJ2jjvZrW0QmSGH7UOw6SpjOKz-0zkXTMg.rUuix_nYMBdXqmEp0oIRTHc9y60COt1w-BflPI-Dkckg.JPEG.lsj952005/%EC%9D%B4%EC%83%81%EC%A3%BC%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.jpg?type=w773" class="mr-3 img-fluid" alt="이상주사진" style="width: 40px; height: auto; border: 1px solid lightgray;">
+                        <div class="media-body" >
+                        <h2 class="mt-0">나의 감상평</h2>
+                        &nbsp;제가 이 영화를 처음 접했을때는 10대 학창시절 아버지와 보았습니다. 그 당시 전 영화가 재밌긴한데 아무런 느낌이 없었고 뭘 말하고 싶어 하는지 생각을 못했습니다. 그리고 이 영화를 20대 중반이 지나는 지금 다시보고 난 뒤 생각이 많아졌습니다. 
+                        장애를 가졌지만 꿋꿋하고 정직하게 살아가는 주인공 포레스트 검프를 보며 학업, 취업, 스팩 등에 쓸데없는 불안감을 느끼고 정체되있던 나와 비교가 되면서 많은 동기부여가 되었고 슬럼프를 극복했던 기억이 납니다. 
+                        미국의 역사를 알고보면 더욱 재밌기때문에 사전에 미국의 큰 이슈들을 알고 보기를 추천합니다. 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" >
+                    <div class="row-2">
+                        <h3>Forrest Gump 예고편</h3>
+                    </div>
+                    <div class="row-10">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bLvqoHBptjg" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="secondMovie">
+        </div>
+        
+
+        <!--두번째영화-->
+        <div class="container" style="margin-bottom: 30px; margin-top: 100px;">
+            <div class="row-12">
+                <!-- 두번째 영화 소개(Card) -->
+                <div class="card mb-3" style="max-width: auto;">
+                    <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/416ivHDsDrL._AC_.jpg" class="card-img" alt="캐치미이프유캔 포스터" >
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">캐치 미 이프 유 캔(Catch me if you can)</h3>
+                            <!-- 별점 -->
+                            <p>평점: <img src="starPoint01.png" alt="" class="img-fluid" width="80px" height="auto" style="margin-bottom: 5px;">&nbsp;&nbsp; 9.20</p>
+                            <ul>
+                                <li>개봉: 2003.01.24</li>
+                                <li>장르: 드라마,범죄,스릴러</li>
+                                <li>감독: 스티븐 스필버그</li>
+                            </ul>
+                            <p class="card-text">&nbsp;《캐치 미 이프 유 캔》(영어: Catch Me If You Can)은 2002년 공개 된 미국의 전기 범죄 코미디 영화이다. 스티븐 스필버그가 감독하고, 제프 네이선슨이 각본을 썼다. 
+                                아버지의 사업이 망하고 부모가 이혼을 한 뒤, 가출을 하고 팬암 조종사, 하버드 의대 수석 졸업 의사, 버클리 법대를 졸업한 변호사를 사칭한 최연소 사기꾼 프랭크와 그를 쫒는 FBI수사관 칼의 이야기로, 
+                                1965년에 실제로 일어난 사기극의 주인공인 프랭크 애버그네일(Frank Abagnale)의 실화를 담고 있다. 레오나르도 디카프리오, 톰 행크스, 크리스토퍼 워컨, 마틴 신, 나탈리 베이과 에이미 아담스가 출연한다.</p>
+                            <p class="card-text"><small class="text-muted">Reference: wikipedia, namuwiki</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 100px;">
+                <div class="col-sm-6">
+                    <!-- 나의 감상평 -->
+                    <div class="media" style="margin: 30px 0px">
+                        <img src="https://postfiles.pstatic.net/MjAyMDA0MDJfMTgz/MDAxNTg1ODMxOTg0MzIy.WNdYUGslJ9TJ2jjvZrW0QmSGH7UOw6SpjOKz-0zkXTMg.rUuix_nYMBdXqmEp0oIRTHc9y60COt1w-BflPI-Dkckg.JPEG.lsj952005/%EC%9D%B4%EC%83%81%EC%A3%BC%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.jpg?type=w773" class="mr-3 img-fluid" alt="이상주사진" style="width: 40px; height: auto; border: 1px solid lightgray;">
+                        <div class="media-body" >
+                        <h2 class="mt-0">나의 감상평</h2>
+                        &nbsp;사실 이 영화는 '칼'(톰행크스) 보다 '프랭크'(레오나르도 디카프리오)가 돋보이는 영화라고 생각합니다. 하지만 '칼'이라는 역할의 대비되는 캐릭터 덕분에 '프랭크'가 더욱 빛날 수 있었다고 생각합니다.
+                        이 영화는 실화를 바탕으로한 영화이지만 어느 영화보다 소설스러운 영화이기 때문에 실화라는 사실이 영화를 더욱 재밌게 만들어 줍니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" style="margin-bottom: 20px;">
+                    <div class="row-2">
+                        <h3>Catch me if you can 예고편</h3>
+                    </div>
+                    <div class="row-10">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KikaTpBn2GM" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="thirdMovie">
+        </div>
+
+        <!--세번째영화-->
+        <div class="container" style="margin-bottom: 30px; margin-top: 100px;">
+            <div class="row-12">
+                <!-- 첫번째 영화 소개(Card) -->
+                <div class="card mb-3" style="max-width: auto;">
+                    <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/415cHQ67j-L._AC_.jpg" class="card-img" alt="터미널 포스터" >
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">터미널(Terminal)</h3>
+                            <!-- 별점 -->
+                            <p>평점: <img src="starPoint02.png" alt="" class="img-fluid" width="80px" height="auto" style="margin-bottom: 5px;">&nbsp;&nbsp; 8.94</p>
+                            <ul>
+                                <li>개봉: 2004.08.27</li>
+                                <li>장르: 드라마,코미디,멜로/로맨스</li>
+                                <li>감독: 스티븐 스필버그</li>
+                            </ul>
+                            <p class="card-text">&nbsp; 《터미널》(영어: The Terminal)은 2004년 개봉한 미국의 코미디 드라마 영화이다. 스티븐 스필버그가 감독하고 톰 행크스, 캐서린 지타존스, 스탠리 투치 등이 출연하였다. 1988년부터 10여 년 동안 프랑스 샤를 드골 국제공항 제1 여객터미널에서 실제로 살았던 이란 출신의 무국적자 메흐란 카리미 나세리(Mehran Karimi Nasseri)의 실화를 바탕으로 만들어진 영화이다. 영화는 실화로부터 모티브만 따왔으며, 영화의 배경이 뉴욕의 존 F. 케네디 국제공항이며 주인공의 조국이 크라코지아(Krakozhia)라는 허구 국가라는 점 등이 실화와는 차이가 있다.</p>
+                            <p class="card-text"><small class="text-muted">Reference: wikipedia, namuwiki</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 100px;">
+                <div class="col-sm-6">
+                    <!-- 나의 감상평 -->
+                    <div class="media" style="margin: 30px 0px">
+                        <img src="https://postfiles.pstatic.net/MjAyMDA0MDJfMTgz/MDAxNTg1ODMxOTg0MzIy.WNdYUGslJ9TJ2jjvZrW0QmSGH7UOw6SpjOKz-0zkXTMg.rUuix_nYMBdXqmEp0oIRTHc9y60COt1w-BflPI-Dkckg.JPEG.lsj952005/%EC%9D%B4%EC%83%81%EC%A3%BC%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.jpg?type=w773" class="mr-3 img-fluid" alt="이상주사진" style="width: 40px; height: auto; border: 1px solid lightgray;">
+                        <div class="media-body" >
+                        <h4 class="mt-0">나의 감상평</h4>
+                        &nbsp; 이 영화는 실화를 바탕으로 코미디하게 풀어낸 영화로 내가 만약 저런상황이라면 어떻게 대체해 나갈 것인지 고민하게 되는 영화였습니다. 소재도 독특하고 신선하기도 하지만 톰행크스의 명연기가 돋보이는 작품으로 꼭 추천하고 싶은 영화 입니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" style="margin-bottom: 20px;">
+                    <div class="row-2">
+                        <h3>Terminal 예고편</h3>
+                    </div>
+                    <div class="row-10">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iZqQRmhRvyg" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        <!-- Table -->
+        <div id="table" class="container" style="margin-top: 100px; margin-bottom: 100px;">
+            <div class="row-12">
+                <h3>영화비교</h3>
+            </div>
+            <div class="row-12">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">제작비</th>
+                        <th scope="col">수익</th>
+                        <th scope="col">상영 시간</th>
+                        <th scope="col">개인적인 순위</th>
+                        <th scope="col">제작사</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Forrest Gump</th>
+                        <td>$5500만</td>
+                        <td>$677,387,716</td>
+                        <td>142분</td>
+                        <td style="text-align: center;">1</td>
+                        <td>파라마운트 픽처스</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Catch me if you can</th>
+                        <td>$5200만</td>
+                        <td>$352,114,312</td>
+                        <td>140분</td>
+                        <td style="text-align: center;">3</td>
+                        <td>앰블린 엔터테인먼트</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Terminal</th>
+                        <td>$6000만</td>
+                        <td>$219,417,255</td>
+                        <td>128분</td>
+                        <td style="text-align: center;">2</td>
+                        <td>앰블린 엔터테인먼트</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 관련영상(리뷰영상) -->
+        <div id="review" class="container">
+            <div class="row-12">
+                <h3>리뷰영상</h3>
+            </div>
+            <div class="row" style="margin-bottom: 100px;">
+                <div class="col-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6SSY5vnt47o"></iframe>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Osqd_5TKigk"></iframe>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5BTu0Th-jhA"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
