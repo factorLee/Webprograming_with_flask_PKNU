@@ -1,0 +1,19 @@
+.firstDiv{
+    color: blue;
+}
+.secondDiv{
+    background-color: gray;
+    color: yellow;
+}
+
+#singleout{
+    color: red;
+    text-decoration: underline;
+}
+p.myP{
+    color: green;
+    font-style: italic;
+}
+
+
+/* CSS의 주석은 */

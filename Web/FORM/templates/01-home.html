@@ -1,0 +1,20 @@
+<h1>설문조사 양식</h1>
+<form method="POST">
+    {{form.hidden_tag()}} 
+    
+    {{form.dept.label}} {{form.dept}}
+    <br>
+    {{form.sugang.label}} {{form.sugang}}
+    <br>
+    {{form.special.label}} {{form.special}}
+    <br>
+    {{form.interest.label}} {{form.interest}}
+    <br>
+    기타 건의사함?
+    <br>
+    {{form.feedback}}
+    <br>
+    {{form.submit}}
+
+
+</form>

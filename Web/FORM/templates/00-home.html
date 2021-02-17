@@ -1,0 +1,18 @@
+<p>
+    {% if  dept %}
+        당신의 소속학과는 {{dept}} 입니다.
+        소속학과를 입력하세요.
+    {% else %}
+        소속학과를 입력하세요.
+
+    {% endif %}
+
+
+</p>
+
+<form method="POST">
+    {{form.hidden_tag()}}
+    {{form.dept.label}} {{form.dept()}}
+    {{form.submit()}}
+
+</form>

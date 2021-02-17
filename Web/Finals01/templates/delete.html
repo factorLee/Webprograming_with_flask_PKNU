@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- 데이터 삭제폼 html --> 
+<div class="jumbotron jumbotron-fluid col-md-10" style=" background-color: #1B1F23; float:right">
+    <div class="container">
+        <h1 style="color: #2B8BFC; font-weight: bold;">Delete</h1>
+        <p style="color: #C9E2FE; font-weight: bold;">Fill out the form below.</p>
+        <form method="POST"style="font-weight: bold; color: white; ">
+            {# This hidden_tag is a CSRF security feature. #}
+            {{ form.hidden_tag() }}
+            {{ form.id.label }} {{ form.id() }}
+            {{ form.submit() }}
+        </form>
+    </div>
+</div>
+{% endblock %}

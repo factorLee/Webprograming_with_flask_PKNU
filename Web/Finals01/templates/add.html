@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+        <!-- 데이터 추가 및 인덱스 홈 html -->
+        <div class="jumbotron jumbotron-fluid col-md-10" style=" background-color: #1B1F23; float:right">
+            <div class="container">
+                <h1 style="color: #2B8BFC; font-weight: bold;">To do list!!</h1>
+                <p style="color: #C9E2FE; font-weight: bold;">Fill out the form below.</p>
+            
+                <form method="POST">
+                    {# This hidden_tag is a CSRF security feature #}
+                    {{ form.hidden_tag() }}
+                    <div class="container" style="font-weight: bold;  color:#7CBAFD;">
+                        {{ form.todoName.label }} 
+                        <br>
+                        {{ form.todoName() }}
+                        <br>
+                        {{ form.duedate.label }} 
+                        <br>
+                        {{ form.duedate() }}
+                        <br>
+                        {{ form.feedback.label }} 
+                        <br>
+                        {{ form.feedback() }}
+                        <br>
+                        {{ form.submit() }}
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 하단부 --> 
+        <div class="jumbotron jumbotron-fluid col-md-10" style="background-color:white; float:right">
+            <div class="container">
+                <div class="container" style="font-weight: bold; color: black; ">
+                    <hr>
+                    <h1 style="color: black; font-weight: bold;">Incomplete Items</h1>
+                    <br>
+                    {{nowDate}}
+                    <br>
+                    
+                    <ul>
+                        {% for todo in todos %}
+                        <p><img src="https://image.flaticon.com/icons/svg/319/319248.svg" alt="" width="10px">{{todo}}</p>
+                        <hr>
+                        {% endfor %}
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+</div>
+
+
+{% endblock %}

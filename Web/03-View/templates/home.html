@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid col-md-10" style="background-color: #161616;">
+    <div class="container">
+      <h1 style="color: #284ef5;">To-do List</h1>
+      <h2 style="color: #4387c7;">This is a modified </h2>
+      <h1 class="lead" style="color: #435bc7;">This is a modified jumbotron that occupies the entire horizontal space of its parent.</h1>
+    </div>
+  <form method="POST">
+    {# This hidden_tag is a CSRF security feature #}
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name() }}
+    {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}

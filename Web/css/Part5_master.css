@@ -1,0 +1,24 @@
+.firstDiv{
+    color: blue;
+    border-style: solid; /*외곽선에 명확한 윤각선을 잡겠다.*/
+    border-width: 5px; /*외곽선의 두깨*/
+    padding: 7px;
+    margin: 0px; /*외곽선끼리 간격이 벌어짐*/
+
+}
+.secondDiv{
+    background-color: gray;
+    color: yellow;
+}
+
+#singleout{
+    color: red;
+    text-decoration: underline;
+}
+p.myP{
+    color: green;
+    font-style: italic;
+}
+
+
+/* CSS의 주석은 */

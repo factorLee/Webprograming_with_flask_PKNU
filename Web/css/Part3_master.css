@@ -1,0 +1,14 @@
+.firstDiv{
+    color: blue;
+}
+.secondDiv{
+    background-color: gray;
+    color: yellow;
+}
+
+#singleout{
+    color: red;
+    text-decoration: underline;
+}
+
+/* CSS의 주석은 */

@@ -1,0 +1,13 @@
+body{
+    background-color: gray;
+}
+p{
+    color: yellow;
+}
+span{
+    background-color: red;
+    color: black;
+}
+div{
+    background-color: blue;
+}

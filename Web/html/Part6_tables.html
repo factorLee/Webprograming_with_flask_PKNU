@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!--첫번째 표-->
+    <table>
+        <tr>    <!--첫번째 행-->
+            <th>First Name</th> <!--1행 1열-->
+            <th>Last Name</th> <!--1행 2열-->
+            <th>Age</th> <!--1행 3열-->
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>66</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>99</td>
+        </tr>
+    </table>
+
+    <!--두번째 표-->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th> <!--colspan = 병합 -->
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>5557853</td>
+            <td>75971788</td>
+        </tr>
+        <tr>
+            <td>Steve Jobs</td>
+            <td>5557854</td>
+            <td>6669890</td>
+        </tr>
+    </table>
+    <!--세번째 표-->
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+            <th>Savings for Holiday</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+            <td rowspan="2">$50</td>
+        </tr>
+        <tr>
+            <td>Febrary</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>$120</td>
+            <td>$100</td>
+        </tr>
+    </table>
+</body>
+</html>

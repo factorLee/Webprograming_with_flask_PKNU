@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Here we use a for loop for a list</p>
+    <ul>
+        {%for pup in puppies %}
+        <li>{{pup}}</li>
+        {% endfor %}
+    </ul>
+    <p>We can also add if/else statement</p>
+    {% if 'Rupus' in puppies %}
+    <p>Found you in the list of puppies Rufus!</p>
+    {% else %}
+    <p>Hum, Rufus isn't in this list.</p>
+    {% endif %}
+    
+</body>
+</html>
